@@ -1,71 +1,57 @@
 body {
-  margin: 0;
-  font-family: "Georgia", serif;
-  background: #fff9f5 url('https://images.unsplash.com/photo-1602524201363-2e0666f179ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center top;
-  background-size: cover;
-  color: #5c3a21;
+    font-family: 'Georgia', serif;
+    background-color: #fdf6f0;
+    color: #5c3a21;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  text-align: center;
-  background: rgba(255, 240, 250, 0.8);
-  padding: 2rem;
+    text-align: center;
+    background-color: #f7e9d7;
+    padding: 2rem 1rem;
 }
 
-h1 {
-  font-size: 3rem;
-  margin: 0;
-  color: #c37b89;
+.logo {
+    max-width: 220px;
+    height: auto;
 }
 
-.tagline {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin-top: 0.5rem;
+.subtitle {
+    font-size: 1.2rem;
+    color: #8c5d3d;
 }
 
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: rgba(255, 250, 255, 0.9);
-  margin: 2rem;
-  border: 2px dashed #f2c6d1;
-  border-radius: 20px;
+.banner img {
+    width: 100%;
+    height: auto;
 }
 
-.cta {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #f8d8e4;
-  color: #5c3a21;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
+main {
+    padding: 2rem;
+    text-align: center;
 }
 
-section {
-  margin: 2rem;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 16px;
-  box-shadow: 0 0 10px rgba(215, 173, 206, 0.4);
+.quotes blockquote {
+    font-style: italic;
+    margin: 1.5rem auto;
+    max-width: 600px;
+    color: #7c5238;
 }
 
-.placeholder-shop {
-  background: #f9f4f1;
-  padding: 1rem;
-  margin-top: 1rem;
-  text-align: center;
-  font-style: italic;
-  border: 1px dashed #decac2;
-  border-radius: 10px;
+.coming-soon h2 {
+    color: #b77c55;
+    margin-top: 3rem;
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
-  background: #fbeff5;
-  color: #a37686;
-  font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f0d9c5;
+    font-size: 0.9rem;
+}
+
+.decor img {
+    width: 60px;
+    margin: 1rem;
 }
