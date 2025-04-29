@@ -1,64 +1,75 @@
 
 body {
-    margin: 0;
     font-family: 'Georgia', serif;
-    background-color: #fffaf7;
-    color: #4b3b3b;
+    background-color: #fdf6f0;
+    color: #4e3b2c;
+    margin: 0;
+    padding: 0;
 }
 
 .banner {
-    position: relative;
-    background: url('images/flower-path-banner.jpg') no-repeat center center/cover;
-    height: 80vh;
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: fadeIn 3s ease-in;
 }
 
-.overlay {
-    background-color: rgba(255, 248, 240, 0.6);
-    padding: 2rem;
-    text-align: center;
-    border-radius: 1rem;
-}
-
-h1 {
-    font-size: 3rem;
-    color: #6b4c3b;
-    margin: 0;
+.logo {
+    width: 300px;
+    margin-bottom: 20px;
 }
 
 .tagline {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-    color: #7c5c4a;
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5em 1em;
+    border-radius: 12px;
 }
 
-main {
-    padding: 2rem;
+section {
+    padding: 2em;
     max-width: 800px;
     margin: auto;
+    animation: fadeInUp 1.5s ease;
 }
 
-.product h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #6a4a3b;
+.product-images img {
+    width: 45%;
+    margin: 1%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #c9b6a3;
 }
 
-.product p {
-    font-size: 1rem;
-    line-height: 1.6;
+ul {
+    list-style: square;
+    margin-left: 1.5em;
 }
 
-.price {
-    font-weight: bold;
-    margin-top: 1rem;
-    font-size: 1.25rem;
+blockquote {
+    font-style: italic;
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 3px solid #d4a373;
 }
 
-.contact {
-    margin-top: 3rem;
-    font-size: 0.95rem;
-    text-align: center;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
